@@ -7,27 +7,27 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://www.gstatic.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>CodeZone — Free Python & Java Practice Lab</title>
+<title>Oceanic — Python & Java Practice Lab</title>
 
 <!-- SEO Meta Tags -->
-<meta name="description" content="CodeZone is a free Python and Java coding practice platform with 180+ challenges, real-world projects, quizzes and full lessons. Learn to code online — no signup needed.">
+<meta name="description" content="Oceanic is a free Python and Java coding practice platform with 180+ challenges, real-world projects, quizzes and full lessons. Dive deep into coding — no signup needed.">
 <meta name="keywords" content="Python practice, Java practice, coding challenges, learn Python online, learn Java online, Python quiz, Java quiz, Python projects, Java projects, free coding platform, BCA MCA students coding">
-<meta name="author" content="CodeZone">
+<meta name="author" content="Oceanic">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#080c18">
 <link rel="canonical" href="https://pyzone.web.app/">
 
 <!-- Open Graph (WhatsApp, Facebook preview) -->
-<meta property="og:title" content="CodeZone — Free Python & Java Practice Lab">
-<meta property="og:description" content="180+ challenges, 20 projects, quizzes and lessons for Python and Java. Free forever. No signup needed.">
+<meta property="og:title" content="Oceanic — Python & Java Practice Lab">
+<meta property="og:description" content="180+ challenges, 20 projects, quizzes and lessons for Python and Java. Dive deep. Free forever.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pyzone.web.app/">
 <meta property="og:image" content="https://pyzone.web.app/og-image.png">
-<meta property="og:site_name" content="CodeZone">
+<meta property="og:site_name" content="Oceanic">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CodeZone — Free Python & Java Practice Lab">
+<meta name="twitter:title" content="Oceanic — Python & Java Practice Lab">
 <meta name="twitter:description" content="180+ challenges, 20 projects, quizzes and lessons. Free Python & Java coding platform.">
 <meta name="twitter:image" content="https://pyzone.web.app/og-image.png">
 
@@ -36,9 +36,9 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "CodeZone",
+  "name": "Oceanic",
   "url": "https://pyzone.web.app",
-  "description": "Free Python and Java coding practice platform with challenges, projects, quizzes and lessons.",
+  "description": "Oceanic — Free Python and Java coding practice platform. Dive deep into coding with challenges, projects, quizzes and lessons.",
   "potentialAction": {
     "@type": "SearchAction",
     "target": "https://pyzone.web.app/?q={search_term_string}",
@@ -50,7 +50,7 @@
 {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
-  "name": "CodeZone",
+  "name": "Oceanic",
   "url": "https://pyzone.web.app",
   "description": "Free coding practice platform for Python and Java learners",
   "offers": [
@@ -58,14 +58,14 @@
       "@type": "Course",
       "name": "Python Programming Practice",
       "description": "90+ Python challenges, 10 projects, 9 quizzes and full lessons",
-      "provider": { "@type": "Organization", "name": "CodeZone" },
+      "provider": { "@type": "Organization", "name": "Oceanic" },
       "isAccessibleForFree": true
     },
     {
       "@type": "Course",
       "name": "Java Programming Practice",
       "description": "90+ Java challenges, 10 projects, 9 quizzes and full lessons",
-      "provider": { "@type": "Organization", "name": "CodeZone" },
+      "provider": { "@type": "Organization", "name": "Oceanic" },
       "isAccessibleForFree": true
     }
   ]
@@ -73,7 +73,7 @@
 </script>
 
 <!-- Favicon (inline SVG as data URI) -->
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2338bdf8'/><text y='.9em' font-size='70' x='12'>CZ</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230ea5e9'/><text y='.9em' font-size='55' x='8'>🌊</text></svg>">
 
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
@@ -132,11 +132,13 @@
     text-decoration: none; cursor: pointer;
   }
   .logo-icon {
-    width: 36px; height: 36px;
-    background: linear-gradient(135deg, var(--accent), var(--accent2));
-    border-radius: 9px;
+    width: 38px; height: 38px;
+    background: linear-gradient(135deg, #0ea5e9, #06b6d4, #0284c7);
+    border-radius: 10px;
     display: flex; align-items: center; justify-content: center;
-    font-size: 1rem; color: #000; font-weight: 700;
+    font-size: 1.1rem; color: #fff; font-weight: 700;
+    box-shadow: 0 0 14px rgba(14,165,233,0.5);
+    flex-shrink: 0;
   }
   .logo span { color: var(--accent); }
 
@@ -729,8 +731,13 @@
 <!-- HEADER -->
 <header>
   <div class="logo" onclick="goHome()">
-    <div class="logo-icon">CZ</div>
-    <span>Code</span>Zone
+    <div class="logo-icon">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <path d="M2 12 C5 8, 8 16, 12 12 C16 8, 19 16, 22 12" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <path d="M2 17 C5 13, 8 21, 12 17 C16 13, 19 21, 22 17" stroke="rgba(255,255,255,0.5)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+      </svg>
+    </div>
+    <span style="font-family:'Outfit',sans-serif;font-weight:800;font-size:1.2rem;letter-spacing:-0.5px;background:linear-gradient(90deg,#38bdf8,#06b6d4,#818cf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Oceanic</span>
   </div>
 
   <div class="lang-switcher" id="main-lang-switcher">
@@ -804,7 +811,7 @@
       <div class="auth-switch">No account? <span onclick="switchForm('signup')">Sign Up</span></div>
     </div>
     <div id="form-signup" style="display:none">
-      <div class="modal-title">Join CodeZone 🚀</div>
+      <div class="modal-title">Join Oceanic 🚀</div>
       <div class="modal-sub">Create your free account</div>
       <div class="auth-error" id="signup-error"></div>
       <input class="auth-input" id="signup-name" type="text" placeholder="Your full name"/>
@@ -818,7 +825,7 @@
       <div class="auth-switch">Have an account? <span onclick="switchForm('login')">Sign In</span></div>
     </div>
     <div id="form-subscribe" style="display:none">
-      <div class="modal-title">Go Pro ⭐</div>
+      <div class="modal-title">Go Pro 🌊</div>
       <div class="modal-sub">Unlock everything for just ₹29/month</div>
       <div style="background:var(--code-bg);border-radius:10px;padding:14px;margin-bottom:18px">
         <div style="display:flex;flex-direction:column;gap:9px">
@@ -867,9 +874,9 @@
   <!-- Python home -->
   <div id="home-py" class="lang-section active">
     <div class="hero">
-      <div class="hero-tag">▸ FREE PYTHON + JAVA PRACTICE LAB</div>
-      <h1>Master Coding,<br><span class="gradient-text">One Problem at a Time</span></h1>
-      <p>Challenges, Projects, Quizzes and Lessons for Python and Java — all in one place. No signup needed.</p>
+      <div class="hero-tag">▸ DIVE DEEP INTO PYTHON &amp; JAVA</div>
+      <h1>Dive Deep Into Code,<br><span class="gradient-text">One Problem at a Time</span></h1>
+      <p>Dive deep into Python and Java with Challenges, Projects, Quizzes and Lessons — all in one place. Free forever.</p>
       <div class="hero-cta">
         <button class="btn-primary" onclick="showPage('py-challenges')">Start Python →</button>
         <button class="btn-outline" onclick="showPage('py-learn')">Learn Python</button>
@@ -5867,7 +5874,7 @@ function initiatePayment() {
       isPro = true;
       localStorage.setItem('cz_pro', 'true');
       closeModal();
-      alert('🎉 Welcome to CodeZone Pro! You now have full access to all solutions.\n\n(Demo: Pro activated for your account)');
+      alert('🎉 Welcome to Oceanic Pro! You now have full access to all solutions.\n\n(Demo: Pro activated for your account)');
       updateAuthUI();
     })
     .catch(e => alert('Error: ' + e.message));
